@@ -1,0 +1,39 @@
+<div class="container-fluid">
+  <div class="row align-items-center">
+    <div class="col-md-6 mt-5 mb-5">
+
+      <div class="row d-flex justify-content-center">
+        <div class="col-md-10">
+          <h1 class="text-center">Entrar</h1>
+
+          <form>
+            <div class="form-group">
+              <label for="nome">Nome:</label>
+              <input type="text" class="form-control" name="nome"
+              id="nome" placeholder="Seu nome" [(ngModel)]='userLogin.usuario'>
+            </div>
+            <div class="form-group">
+              <label for="senha">Senha:</label>
+              <input type="password" class="form-control" name="senha"
+              id="senha" placeholder="Sua senha" [(ngModel)]='userLogin.senha'>
+            </div>
+
+            <button class="btn btn-dark w-50 d-block m-auto" (click)='entrar()'>Entrar</button>
+          </form>
+
+          <hr class="mt-5 mb-5">
+
+          <p class="text-center">
+            Não tem uma conta? <a routerLink="/cadastrar">Cadastre-se</a>
+          </p>
+
+        </div>
+      </div>
+
+    </div>
+
+    <div class="col-md-6" id="img-bg"></div>
+
+  </div>
+</div>
+
